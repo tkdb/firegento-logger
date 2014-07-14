@@ -72,6 +72,7 @@
                 <class>FireGento_Logger_Model</class>
                 <resourceModel>logger_resource</resourceModel>
             </firegento_logger>
+            <!-- global/models/logger_resource
             <logger_resource>
                 <class>FireGento_Logger_Model_Resource</class>
                 <entities>
@@ -80,6 +81,7 @@
                     </db_entry>
                 </entities>
             </logger_resource>
+            -->
         </models>
         <resources>
             <logger_setup>
@@ -114,10 +116,12 @@
                         <label>Mail</label>
                         <class>FireGento_Logger_Model_Mail</class>
                     </mailconfig>
+                    <!-- config/global/log/core/writer_models/db
                     <db>
                         <label>Database</label>
                         <class>FireGento_Logger_Model_Db</class>
                     </db>
+                    -->
                     <xmpp>
                         <label>XMPP</label>
                         <class>FireGento_Logger_Model_Xmpp</class>
@@ -171,6 +175,7 @@ FILE: %file%:%line%
             <mailconfig>
                 <priority>default</priority>
             </mailconfig>
+            <!-- default/logger/db -->
             <db>
                 <priority>default</priority>
                 <max_days_to_keep>45</max_days_to_keep>

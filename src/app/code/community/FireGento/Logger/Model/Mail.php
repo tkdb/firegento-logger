@@ -65,10 +65,10 @@ class FireGento_Logger_Model_Mail extends Zend_Log_Writer_Mail
     public function getMail()
     {
         if ($this->_mail === null) {
-            $this->_mail = new Zend_Mail();
-
             /** @var $helper FireGento_Logger_Helper_Data */
             $helper = Mage::helper('firegento_logger');
+
+            $this->_mail = new Zend_Mail();
 
             $storeName = Mage::app()->getStore()->getName();
             $subject = $storeName .' - Debug Information';
